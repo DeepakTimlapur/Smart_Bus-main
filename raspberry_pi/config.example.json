@@ -1,0 +1,8 @@
+﻿{
+  "server_url": "http://localhost:3000",
+  "device_id": "REPLACE_WITH_REGISTERED_DEVICE_ID",
+  "bus_id": "BUS-01",
+  "camera_role": "ENTRY",
+  "api_key": "REPLACE_WITH_KEY_FROM_DEVICE_REGISTRATION",
+  "offline_db_path": "iot_events_queue.db"
+}

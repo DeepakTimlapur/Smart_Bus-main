@@ -1,0 +1,11 @@
+{
+  "name": "Smart Bus System",
+  "description": "Next-Gen Smart Bus Entry System using Vision Intelligence and IoT for student tracking, boarding verification, and fleet management",
+  "requestFramePermissions": [
+    "camera",
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,18 @@
+[Unit]
+Description=Smart Bus IoT Edge Daemon (Camera, GPS, Offline Queue)
+After=network.target network-online.target systemd-time-wait-sync.service
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/smart-bus-iot
+ExecStart=/home/pi/smart-bus-iot/venv/bin/python3 /home/pi/smart-bus-iot/main.py --config /home/pi/smart-bus-iot/config.json
+Restart=always
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target

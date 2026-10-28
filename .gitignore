@@ -1,0 +1,94 @@
+.env.local
+.env.*.local
+!.env.example
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+*credentials*
+*secrets*
+
+# Python and Node generated files
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.next/
+.turbo/
+tsconfig.tsbuildinfo
+
+# Local databases and runtime queues
+*.db
+*.sqlite
+*.sqlite3
+
+# Biometric enrollment data — never publish
+raspberry_pi/enrollments/
+**/local_templates*.json
+
+# Local configuration may contain device/API credentials
+raspberry_pi/config.json
+raspberry_pi/config.json.*
+
+# Backups and temporary artifacts
+**/*backup*/
+**/*.bak
+**/*.before-*
+*.log
+
+# Potential biometric images and student-data backups
+detector_test*.jpg
+student-cleanup-backup-*.json
+
+# Accidental terminal-output files
+t *
+
+# Local database contents and student records
+data/transit_db*.json
+student-cleanup-backup-*.json
+
+# Student-specific QR codes
+public/*_qr.png
+
+# Source-file backups and patch leftovers
+*.backup
+*.backup-*
+*.bak
+*.bak-*
+*.pre-*
+*.before-*
+*.backup-before-*
+*.backup-before-*
+
+# Personal/student data and local test artifacts
+/labels.json
+/iot-test-review.txt
+/detector_test*.jpg
+/camera_display_test.py
+
+# Temporary one-off patch and debugging scripts
+/apply_*.py
+/enable_preview_traceback.py
+/fix_*.py
+/optimize_*.py
+/patch_*.py
+/update_display*.py
+/update_student.js
+/upgrade_pipeline.py
+/atlas-*-readonly.cjs
+/atlas-tls-test.cjs
+/restore-demo-users.cjs
+/seed_db.py
+/test_arcface_embedding.py
+/test_mbf.py
+/test_scrfd_webcam.py
+
+# Before-file copies
+*.before_*
+*.before-*

@@ -1,0 +1,11 @@
+# Smart Bus IoT Client Dependencies
+requests>=2.28.0
+pyserial>=3.5
+numpy>=1.22.0
+opencv-python-headless>=4.6.0.66
+# Optional for Raspberry Pi Camera Module:
+# picamera2>=0.3.0
+# Optional: only required if you set embedding_model_path in config.json to
+# use a real ONNX deep embedding model instead of the classical CV fallback.
+# The classical fallback (embedding_model.HOGLBPEmbedder) needs nothing here.
+# onnxruntime>=1.16.0
